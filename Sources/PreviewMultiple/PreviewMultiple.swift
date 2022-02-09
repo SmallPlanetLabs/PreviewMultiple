@@ -39,7 +39,7 @@ public struct PreviewMultiple<Content: View>: View {
             content
                 .previewDevice(device.device)
                 .previewDisplayName(device.name)
-                .colorScheme(device.colorScheme)
+                .preferredColorScheme(device.colorScheme)
                 .backport.previewInterfaceOrientation(device.orientation)
                 .environment(\.sizeCategory, device.sizeCategory)
         }
